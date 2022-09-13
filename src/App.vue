@@ -1,17 +1,18 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <JqueryTable/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
+import JqueryTable from './components/JqueryTable.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    JqueryTable
   }
 }
 </script>
@@ -24,5 +25,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.container{
+  max-width: 1000px;
 }
 </style>
